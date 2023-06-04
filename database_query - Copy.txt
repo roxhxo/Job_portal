@@ -1,0 +1,233 @@
+show dbs
+show collections
+db
+
+use project
+project.createCollection('hint_questions')
+project.hint_questions.insert({'question_id': 1, 'question_description': 'Who was your first crush ?'})
+project.hint_questions.insert({'question_id': 2, 'question_description': 'What is your dream in one word ?'})
+project.hint_questions.insert({'question_id': 3, 'question_description': 'What is your favourite destination ?'})
+project.hint_questions.insert({'question_id': 4, 'question_description': 'What is your favourite drink ?'})
+project.hint_questions.insert({'question_id': 5, 'question_description': 'Who is your inspiration ?'})
+project.hint_questions.find().pretty()
+
+project.createCollection('user_data')
+project.user_data.insert({'user_email': 'lizakukreja@gmail.com' , 'user_password': 'liza' , 'hint_question': 1, 'hint_answer': 'thor' , 'user_type': 1 })
+project.user_data.insertMany([{'user_email': 'anshkukreja@gmail.com' , 'user_password': 'ansh' , 'hint_question': 2, 'hint_answer': 'sleep' , 'user_type': 1 },
+                              {'user_email': 'vanshkukreja@gmail.com' , 'user_password': 'vansh' , 'hint_question': 3, 'hint_answer': 'raebareli' , 'user_type': 1},
+                              {'user_email': 'riddhi@yahoo.com' , 'user_password': 'riddhi' , 'hint_question': 4, 'hint_answer': 'water' , 'user_type': 2},
+                              {'user_email': 'purvika@yahoo.com' , 'user_password': 'purvika' , 'hint_question': 5, 'hint_answer': 'harry potter' , 'user_type': 2}])
+
+project.user_data.find().pretty()
+
+project.createCollection('user_type')
+project.user_type.insertMany([{'user_id': 1, 'user_type': 'candidate'},
+                              {'user_id': 2, 'user_type': 'recruiter'}])
+project.user_type.find().pretty()
+
+project.createCollection('company')
+project.company.insertMany([{'company_id': 1, 'company_name': 'Wipro'},
+                            {'company_id': 2, 'company_name': 'Infosys'},
+                            {'company_id': 3, 'company_name': 'TCS'}])
+project.company.find().pretty()
+
+project.createCollection('employer')
+project.employer.insertMany([{
+  "company_id": 1,
+  "employer_email": "riddhi@yahoo.com",
+  "employer_name": "Riddhi",
+  "employer_contact": "+911234567890",
+  "employer_address": "H No 23, 5th a cross road, rajshree layout, munnekolal, banglore, 560037, India",
+  "employer_gender": "F",
+  "employer_dob": "1995-09-15",
+  "employer_picture": "riddhi@yahoo.png"},
+  {
+  "company_id": 2,
+  "employer_email": "purvika@yahoo.com",
+  "employer_name": "Purvika",
+  "employer_contact": "+911234567890",
+  "employer_address": "CMRIT, banglore, 560037, India",
+  "employer_gender": "F",
+  "employer_dob": "2000-10-16",
+  "employer_picture": "purvika@yahoo.png"
+  }])
+project.employer.find().pretty()
+
+project.createCollection('job_description')
+project.job_description.insertMany([
+{ 
+"job_id": 1,
+  "job_title": "Machine Learning Engineer",
+  "job_location": "Bengaluru, Karnataka, India",
+  "job_type": "Software Developer",
+  "job_duration": "2023-04-15",
+  "job_salary_range": "250000-350000",
+  "job_conditions": "Night Shift",
+  "job_gender": "M",
+  "job_summary": "Experience machine learning engineer with python scripting",
+  "job_responsibilities": "Need a person with python expertise in automation and scripting and eager to learn about machine learning algorithms and use them for preparing applications related to aritificial intelligence and image processing. Knowledge of tensor flow and keras would be beneficial",
+  "job_experience": 5,
+  "job_soft_skills": [
+    "english",
+    "team leadership",
+    "public speaking",
+    "execution excellance"
+  ],
+  "job_tech_skills": [
+    "python",
+    "r",
+    "machine learning",
+    "supervized learning",
+    "data science",
+    "data analysis"
+  ],
+  "job_qualification": "graduation",
+  "job_certification": "NA",
+  "job_language": "english",
+  "employer_email": "riddhi@yahoo.com",
+  "job_validity": true
+}
+])
+project.job_description.find().pretty()
+
+project.createCollection('candidate_profile')
+project.employer.insertMany([
+{
+  "candidate_language": "Hindi, English",
+  "candidate_email": "lizakukreja@gmail.com",
+  "candidate_name": "Liza Kukreja",
+  "candidate_contact": "+913333333333",
+  "candidate_address": "H No 203, 5th a cross road, rajshree layout, munnekolal, banglore, 560037, India",
+  "candidate_gender": "F",
+  "candidate_dob": "2000-10-16",
+  "candidate_picture": "lizakukreja@gmail.png",
+  "candidate_experience": 4
+  },
+  {
+  "candidate_language": "Hindi, English",
+  "candidate_email": "anshkukreja@gmail.com",
+  "candidate_name": "Ansh Kukreja",
+  "candidate_contact": "+914444444444",
+  "candidate_address": "H No 62, 6thcross road, rajshree layout, munnekolal, banglore, 560037, India",
+  "candidate_gender": "F",
+  "candidate_dob": "1995-09-15",
+  "candidate_picture": "anshkukreja@gmail.png",
+  "candidate_experience": 3
+  },
+  {
+  "candidate_language": "Hindi, English",
+  "candidate_email": "vanshkukreja@gmail.com",
+  "candidate_name": "Vansh Kukreja",
+  "candidate_contact": "+915555555555",
+  "candidate_address": "6/2 Arya Nagar, Behind Poojan Hotel Sitapur, Uttar Pradesh, 261001, India.",
+  "candidate_gender": "M",
+  "candidate_dob": "1995-09-15",
+  "candidate_picture": "vanshkukreja@gmail.png",
+  "candidate_experience": 7
+  }
+  ])
+project.candidate_profile.find().pretty()
+
+
+project.createCollection('candidate_skills')
+project.employer.insertMany([
+{
+  "candidate_skill": "Python, MongoDB, Testing",
+  "candidate_email": "lizakukreja@gmail.com"
+  },
+{
+  "candidate_skill": "Python, Machine Learning, data analytics and analysis",
+  "candidate_email": "anshkukreja@gmail.com"
+  },
+{
+  "candidate_skill": "Tensorflow and Keras, R",
+  "candidate_email": "vanshkukreja@gmail.com"
+  },
+  ])
+project.candidate_profile.find().pretty()
+
+
+
+project.createCollection('candidate_experience')
+project.employer.insertMany([
+{
+  "work_company": "Wipro Technologies",
+  "work_duration": "2018-2022",
+  "work_details": "Worked on networking projects, machine learning, time series, testing, python, git, jenkins, automation tester",
+  "candidate_email": "lizakukreja@gmail.com"
+  },
+{
+  "work_company": "Amazon",
+  "work_duration": "2018-Present",
+  "work_details": "Worked on frontend development, react applications, debugging and testing of code. Backend development in python and database handling as well.",
+  "candidate_email": "anshkukreja@gmail.com"
+  },
+{
+  "work_company": "Auvindia",
+  "work_duration": "2018-2020",
+  "work_details": "Worked on creating environmental solution based on data analysis and created graphs and provided website and solution for testing climate.",
+  "candidate_email": "vanshkukreja@gmail.com"
+  },
+{
+  "work_company": "TCS",
+  "work_duration": "2020-2023",
+  "work_details": "worked on developing mongodb database and also projecting it in graphical format using python frameworks and also did testing",
+  "candidate_email": "vanshkukreja@gmail.com"
+  }
+  ])
+project.candidate_experience.find().pretty()
+
+project.createCollection('candidate_education')
+project.employer.insertMany([
+{
+  "candidate_college": "CMRIT, Bengaluru",
+  "candidate_degree": "Graduation, Bachelor of Engineering, Computer Science",
+  "candidate_year": "2019-2023",
+  "candidate_marks": 80,
+  "candidate_email": "lizakukreja@gmail.com"
+  },
+{
+  "candidate_college": "Assam Valley School, Assam",
+  "candidate_degree": "Intermediate, Science",
+  "candidate_year": "2018-2019",
+  "candidate_marks": 87,
+  "candidate_email": "lizakukreja@gmail.com"
+  },
+{
+  "candidate_college": "Assam Valley School, Assam",
+  "candidate_degree": "High School, Science",
+  "candidate_year": "2016-2017",
+  "candidate_marks": 81,
+  "candidate_email": "lizakukreja@gmail.com"
+  },
+{
+  "candidate_college": "NIT - Bhopal",
+  "candidate_degree": "Graduation, Bachelor of Engineering, Computer Science",
+  "candidate_year": "2014-2018",
+  "candidate_marks": 89,
+  "candidate_email": "vanshkukreja@gmail.com"
+  },
+  {
+  "candidate_college": "Sacred Heart Inter College, Sitapur",
+  "candidate_degree": "Intermediate, Science",
+  "candidate_year": "2012-2013",
+  "candidate_marks": 75,
+  "candidate_email": "anshkukreja@gmail.com"
+  },
+  {
+  "candidate_college": "Sacred Heart Inter College, Sitapur",
+  "candidate_degree": "Intermediate, Science",
+  "candidate_year": "2012-2013",
+  "candidate_marks": 75,
+  "candidate_email": "anshkukreja@gmail.com"
+  }
+  ])
+project.candidate_education.find().pretty()
+
+project.createCollection('message')
+project.message.insertMany([{'name': 'Vansh', 'email': 'vanshkukreja1595@gmail.com', 'message': 'Hello'},
+                            {'name': 'Vansh', 'email': 'vanshkukreja1595@gmail.com', 'message': 'Hello'}])
+project.message.find().pretty()
+
+https://www.mongodb.com/developer/products/mongodb/cheat-sheet/
+https://www.codewithharry.com/blogpost/mongodb-cheatsheet/
