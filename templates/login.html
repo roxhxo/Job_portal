@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/login.css')}}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+<nav>
+    <div class="logo">
+      <img src= "{{url_for('static', filename = 'images/logo.png')}}" alt="JobDoor Logo">
+      <a href="/"><h1>JobDoor</h1></a>
+    </div>
+    <ul>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+  </nav>
+<div class="form">
+      <ul class="tab-group">
+        <button class="button button-block" onclick="window.location.href = '/sign_up';" >Sign Up</button>
+        <button class="button button-block" onclick="window.location.href = '/login';" >Log In</button>
+      </ul>
+      <div class="tab-content">
+        <div id="login" style="display: block;">
+          <h1>Welcome Back!</h1>
+          <form action="/login" method="post">
+            <div class="field-wrap">
+            <input type="email" id = "email_login" name = "email" placeholder="Email Address" required autocomplete="off"/>
+          </div>
+          <div class="field-wrap">
+            <input type="password" id = "password_login"  name = "password" placeholder="Enter Password" required autocomplete="off"/>
+          </div>
+          <p class="forgot"><a href="/forget_password">Forgot Password?</a></p>
+          <button type="submit" class="button button-block"/>Log In</button>
+          </form>
+        </div>
+      </div><!-- tab-content -->
+</div> <!-- /form -->
+   <p>{{msg}}</p>
+</body>
+</html>

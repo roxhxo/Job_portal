@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{{url_for('static', filename= 'stylesheets/job_page.css')}}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="{{url_for('static', filename='javascript/jquery_1.7.1.min.js')}}"></script>
+<!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+<!--<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>-->
+    <link rel="stylesheet" href="{{url_for('static', filename= 'stylesheets/datatables.min.css')}}">
+    <script src="{{url_for('static', filename='javascript/datatables.min.js')}}"></script>
+    <script src="{{url_for('static', filename='javascript/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static', filename='javascript/sort_table.js')}}"></script>
+<!--        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+<!--<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>-->
+<!--<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>-->
+<!--<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <title>JobDoor</title>
+</head>
+<body>
+<nav>
+    <div class="logo">
+      <img src= "{{url_for('static', filename = 'images/logo.png')}}" alt="JobDoor Logo">
+      <a href="/"><h1>JobDoor</h1></a>
+    </div>
+    <ul>
+      <li><a href="/view_recruiter">View Profile</a></li>
+      <li><a href="/edit_recruiter">Edit Profile</a></li>
+      <li><a href="/change_password">Change Password</a></li>
+      <li><a href="/job_page">Job Page</a></li>
+      <li><a href="#">{{user_name}}</a></li>
+      <li><a href="/sign_out">Sign Out</a></li>
+    </ul>
+  </nav>
+  <h1>JOB DATA DETAILS</h1>
+  <h1>{{msg}}</h1>
+<table id="job_details">
+    <thead>
+        <tr>
+            <th> Job Id </th>
+            <th> Job Summary </th>
+            <th> View Job Details </th>
+            <th> Edit Job Details </th>
+            <th> Delete Job Details </th>
+            <th> View Candidates </th>
+        </tr>
+    </thead>
+    <tbody>
+   {% for result in results %}
+        <tr>
+            <td>{{result[0]}}</td>
+            <td>{{result[1]}}</td>
+            <td><a class = "results" href="{{ '/read_job/%s'%result[0] }}"><img class = "icons" src= "{{url_for('static', filename = 'images/view.png')}}" alt="view"></a></td>
+            <td><a class = "results" href="{{ '/edit_job/%s'%result[0] }}"><img class = "icons" src= "{{url_for('static', filename = 'images/edit.png')}}" alt="edit" ></a></td>
+            <td><a class = "results" href="{{ '/delete_job/%s'%result[0] }}" onclick="return confirm('Are you sure you want to Delete this job?');"><img class = "icons"  src= "{{url_for('static', filename = 'images/bin.png')}}" alt="delete"></a></td>
+            <td><a class = "results" href="{{ '/view_candidates/%s'%result[0] }}"><img class = "icons"  src= "{{url_for('static', filename = 'images/candidate.png')}}" alt="candidate"></a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<div style="text-align: center;">
+  <button class="button button-block" onclick="window.location.href = '/create_job';" >Click Here To Add New Job </button>
+</div>
+<!--<script>-->
+<!--$(document).ready(function(){-->
+<!--    $('#job_details').dataTable();-->
+<!--});-->
+<!--</script>-->
+</body>
+</html>

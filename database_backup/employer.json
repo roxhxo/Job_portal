@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "644439057709990cbb853636"
+  },
+  "company_id": "5",
+  "employer_email": "riddhi@yahoo.in",
+  "employer_name": "Riddhi Agarwal",
+  "employer_contact": "7355530129",
+  "employer_address": "H No 23, 5th a cross road, rajshree layout, munnekolal, banglore, India",
+  "employer_gender": "female",
+  "employer_dob": "1998-10-12",
+  "employer_picture": "riddhi_yahoo_in.png"
+},{
+  "_id": {
+    "$oid": "644439567709990cbb853637"
+  },
+  "company_id": "2",
+  "employer_email": "purvika@yahoo.in",
+  "employer_name": "Purvika",
+  "employer_contact": "+911234567890",
+  "employer_address": "CMRIT, banglore, 560037, India",
+  "employer_gender": "female",
+  "employer_dob": "2000-10-16",
+  "employer_picture": "purvika@yahoo.png"
+},{
+  "_id": {
+    "$oid": "644af58c38be0d993c4aa3b8"
+  },
+  "company_id": "6",
+  "employer_name": "ramesh",
+  "employer_contact": "9128956740",
+  "employer_address": "ghaziabad",
+  "employer_dob": "2023-04-12",
+  "employer_gender": "male",
+  "employer_email": "",
+  "employer_picture": ".png"
+},{
+  "_id": {
+    "$oid": "644af6cc6c1278416212325e"
+  },
+  "company_id": "6",
+  "employer_name": "kamlesh",
+  "employer_contact": "9876453678",
+  "employer_address": "hyderabad",
+  "employer_dob": "2023-04-10",
+  "employer_gender": "male",
+  "employer_email": "wipro@gmail.com",
+  "employer_picture": "wipro_gmail_com.png"
+}]

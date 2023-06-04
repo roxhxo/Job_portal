@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "6435bb127709990cbb853604"
+  },
+  "user_id": 1,
+  "user_type": "candidate"
+},{
+  "_id": {
+    "$oid": "6435bb357709990cbb853605"
+  },
+  "user_id": 2,
+  "user_type": "recruiter"
+}]

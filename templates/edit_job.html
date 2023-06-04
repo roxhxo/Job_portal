@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{{url_for('static', filename= 'stylesheets/edit_job.css')}}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <title>JobDoor</title>
+</head>
+<body>
+<nav>
+    <div class="logo">
+      <img src="{{url_for('static', filename = 'images/logo.png')}}"  alt="JobDoor Logo">
+      <a href="/"><h1>JobDoor</h1></a>
+    </div>
+    <ul>
+      <li><a href="/view_recruiter">View Profile</a></li>
+      <li><a href="/edit_recruiter">Edit Profile</a></li>
+      <li><a href="/change_password">Change Password</a></li>
+      <li><a href="/job_page">Job Page</a></li>
+      <li><a href="#">{{user_name}}</a></li>
+      <li><a href="/sign_out">Sign Out</a></li>
+    </ul>
+  </nav>
+  <h1>Edit Job Details</h1>
+  <h1>{{msg}}</h1>
+<div class="form">
+      <div class="tab-content">
+        <div id="edit_job" style="display: block;">
+          <form action="/edit_job/{{data.job_id}}" method="post" id="edit-job" name="edit-job">
+          <div class="top-row"></div>
+          <div class="field-wrap">
+            <label for = "job_id"> Job Id </label>
+            <input type="text" id="job" name="job" required value = {{data.job_id}} disabled>
+              <input type="hidden" id="job_id" name="job_id" required value = {{data.job_id}}>
+          </div>
+              <div class="field-wrap">
+                  <label for = "job_title"> Job Title </label>
+            <input type="text" id="job_title" name="job_title" required value="{{data.job_title}}">
+              </div>
+              <div class="field-wrap">
+                  <label for = "job_location"> Job Location </label>
+             <input type="text" id="job_location" name="job_location" required value="{{data.job_location}}">
+          </div>
+              <div class="field-wrap">
+                  <label for = "job_type"> Job Type </label>
+         <input type="text" id="job_type" name="job_type" required value="{{data.job_type}}">
+          </div>
+              <div class="field-wrap">
+                  <label for = "job_duration"> Job Posting Date </label>
+            <input type="date" id="job_duration" name="job_duration" required value="{{data.job_duration}}">
+          </div>
+              <div class="field-wrap">
+                  <label for = "job_salary_min"> Job Minimum Salary </label>
+              <input type="number" id="job_salary_min" name="job_salary_min" required value="{{data.min_salary}}">
+              </div>
+              <div class="field-wrap">
+                  <label for = "job_salary_max"> Job Maximum Salary </label>
+              <input type="number" id="job_salary_max" name="job_salary_max" required value="{{data.max_salary}}">
+          </div>
+              <div class="field-wrap">
+              <label for = "job_conditions"> Job Conditions </label>
+              <input type="text" id="job_conditions" name="job_conditions" required value="{{data.job_conditions}}">
+          </div>
+              <div class="field-wrap">
+              <fieldset>
+              <legend>Please select if the job is gender specific </legend>
+              {% if 'male' in data.job_gender %}
+                  <input type="checkbox" id="male" name="male" value="male" checked>
+              {% else %}
+                  <input type="checkbox" id="male1" name="male" value="male" >
+              {% endif %}
+              <label for="male" class="checkbox_labels"> Male </label>
+              {% if 'female' in data.job_gender %}
+              <input type="checkbox" id="female" name="female" value="female" checked>
+              {% else %}
+              <input type="checkbox" id="female2" name="female" value="female" >
+              {% endif %}
+              <label for="female" class="checkbox_labels"> Female </label>
+              {% if 'transgender' in data.job_gender %}
+              <input type="checkbox" id="transgender" name="transgender" value="transgender" checked>
+              {% else %}
+              <input type="checkbox" id="transgender2" name="transgender" value="transgender">
+              {% endif %}
+              <label for="transgender" class="checkbox_labels"> Transgender </label>
+              {% if 'na' in data.job_gender %}
+              <input type="checkbox" id="not_applicable" name="not_applicable" value="na" checked>
+              {% else %}
+              <input type="checkbox" id="not_applicable1" name="not_applicable" value="na">
+              {% endif %}
+              <label for="not_applicable" class="checkbox_labels"> NA </label>
+              </fieldset>
+              </div>
+              <div class="field-wrap">
+                  <label for = "job_summary"> Job Summary </label>
+             <input type="text" id="job_summary" name="job_summary" required value = "{{data.job_summary}}">
+          </div>
+              <div class="field-wrap">
+                  <label for = "job_responsibilities"> Job Responsibilities </label>
+             <textarea id = "job_responsibilities" name = "job_responsibilities" rows="10" column = "50" form="edit-job">{{data.job_responsibilities}} </textarea>
+          </div>
+              <div class="field-wrap">
+                  <label for = "job_experience"> Job Experience (In Years) </label>
+            <input type="number" id="job_experience" name="job_experience" required value="{{data.job_experience}}">
+          </div>
+              <div class="field-wrap">
+                  <label for = "job_soft_skills"> Job Soft Skills </label>
+             <input type="text" id="job_soft_skills" name="job_soft_skills" required value="{{data.job_soft_skills}}">
+          </div>
+              <div class="field-wrap">
+                  <label for = "job_tech_skills"> Job Tech Skills </label>
+            <input type="text" id="job_tech_skills" name="job_tech_skills" required value="{{data.job_tech_skills}}">
+          </div>
+              <div class="field-wrap">
+                  <label for = "job_qualification"> Job Qualification </label>
+            <input type="text" id="job_qualification" name="job_qualification" required value="{{data.job_qualification}}">
+          </div>
+              <div class="field-wrap">
+                  <label for = "job_certification"> Job Certification </label>
+            <input type="text" id="job_certification" name="job_certification" required value="{{data.job_certification}}">
+          </div>
+              <div class="field-wrap">
+                  <label for = "job_language"> Job Language </label>
+           <input type="text" id="job_language" name="job_language" required value="{{data.job_language}}">
+          </div>
+          <div class="field-wrap">
+            <select name = "job_validity" id = "job_validity" class = "job_validity">
+                <label for = "job_validity"> Job Status </label>
+                {% if 'true' in data.job_validity %}
+                <option value = "true" selected >This New Job Created Is Active</option>
+                <option value = "false">This New Job Created Is Inactive</option>
+                {% else %}
+                <option value = "true">This New Job Created Is Active</option>
+                <option value = "false" selected>This New Job Created Is Inactive</option>
+                {% endif %}
+            </select>
+              </div>
+               <div class="field-wrap">
+          <button type="submit" class="button button-block"/>Click to update job details </button>
+          </div>
+          </form>
+        </div>
+      </div><!-- tab-content -->
+</div> <!-- /form -->
+</body>
+</html>

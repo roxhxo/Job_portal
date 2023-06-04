@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "644440fa7709990cbb85363d"
+  },
+  "candidate_skill": "python, r, machine learning, supervized learning, data science, data analysis,english, team leadership, public speaking, execution excellance",
+  "candidate_email": "lizakukreja@gmail.com",
+  "candidate_address": "H No 203, 5th a cross road, rajshree layout, munnekolal, banglore, 560037, India",
+  "candidate_contact": "+913333333333",
+  "candidate_dob": "2000-10-16",
+  "candidate_experience": "7",
+  "candidate_gender": "transgender",
+  "candidate_language": "Hindi, English",
+  "candidate_name": "Liza",
+  "candidate_picture": "lizakukreja@gmail.png"
+},{
+  "_id": {
+    "$oid": "644441307709990cbb85363e"
+  },
+  "candidate_skill": "Python, Machine Learning, data analytics and analysis",
+  "candidate_email": "anshkukreja@gmail.com"
+},{
+  "_id": {
+    "$oid": "644441477709990cbb85363f"
+  },
+  "candidate_skill": "Tensorflow and Keras, R",
+  "candidate_email": "vanshkukreja@gmail.com"
+}]

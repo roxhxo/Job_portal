@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{{url_for('static', filename= 'stylesheets/create_job.css')}}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <title>JobDoor</title>
+</head>
+<body>
+<nav>
+    <div class="logo">
+      <img src="{{url_for('static', filename = 'images/logo.png')}}"  alt="JobDoor Logo">
+      <a href="/"><h1>JobDoor</h1></a>
+    </div>
+    <ul>
+      <li><a href="/view_recruiter">View Profile</a></li>
+      <li><a href="/edit_recruiter">Edit Profile</a></li>
+      <li><a href="/change_password">Change Password</a></li>
+      <li><a href="/job_page">Job Page</a></li>
+      <li><a href="#">{{user_name}}</a></li>
+      <li><a href="/sign_out">Sign Out</a></li>
+    </ul>
+  </nav>
+  <h1>Add New Job Details</h1>
+  <h1>{{msg}}</h1>
+<div class="form">
+      <div class="tab-content">
+        <div id="create_job" style="display: block;">
+          <form action="/create_job" method="post" id="create-job" name="create-job">
+          <div class="top-row"></div>
+              <div class="field-wrap">
+            <input type="text" id="job_title" name="job_title" required placeholder="Please enter job title">
+              </div>
+              <div class="field-wrap">
+             <input type="text" id="job_location" name="job_location" required placeholder="Please enter job location">
+          </div>
+              <div class="field-wrap">
+         <input type="text" id="job_type" name="job_type" required placeholder="Please enter job type">
+          </div>
+              <div class="field-wrap">
+            <input type="date" id="job_duration" name="job_duration" required placeholder="Please enter job posting data ">
+          </div>
+              <div class="field-wrap">
+              <input type="number" id="job_salary_min" name="job_salary_min" required placeholder="Please enter minimum salary for job">
+              </div>
+              <div class="field-wrap">
+              <input type="number" id="job_salary_max" name="job_salary_max" required placeholder="Please enter maximum salary for job">
+          </div>
+              <div class="field-wrap">
+              <input type="text" id="job_conditions" name="job_conditions" required placeholder="Please enter job conditions if any">
+          </div>
+              <div class="field-wrap">
+              <fieldset>
+              <legend>Please select if the job is gender specific </legend>
+              <input type="checkbox" id="male" name="male" value="male" >
+              <label for="male" class="checkbox_labels"> Male </label>
+              <input type="checkbox" id="female" name="female" value="female">
+              <label for="female" class="checkbox_labels"> Female </label>
+              <input type="checkbox" id="transgender" name="transgender" value="transgender">
+              <label for="transgender" class="checkbox_labels"> Transgender </label>
+              <input type="checkbox" id="not_applicable" name="not_applicable" value="na">
+              <label for="not_applicable" class="checkbox_labels"> NA </label>
+              </fieldset>
+              </div>
+              <div class="field-wrap">
+             <input type="text" id="job_summary" name="job_summary" required placeholder="Please enter job summary in short">
+          </div>
+              <div class="field-wrap">
+             <textarea id = "text-box" rows="10" column = "50" form="create-job" name="job_responsibilities" value = 'Enter the job responsibilities in detail.'> Enter the job responsibilities in detail. </textarea>
+          </div>
+              <div class="field-wrap">
+            <input type="number" id="job_experience" name="job_experience" required placeholder="Please enter job experience in years">
+          </div>
+              <div class="field-wrap">
+             <input type="text" id="job_soft_skills" name="job_soft_skills" required placeholder="Please enter job soft skills with comma separated values">
+          </div>
+              <div class="field-wrap">
+            <input type="text" id="job_tech_skills" name="job_tech_skills" required placeholder="Please enter job tech skills with comma separated values">
+          </div>
+              <div class="field-wrap">
+            <input type="text" id="job_qualification" name="job_qualification" required placeholder="Please enter if job requires any educational qualification">
+          </div>
+              <div class="field-wrap">
+            <input type="text" id="job_certification" name="job_certification" required placeholder="Please enter if any job certification is needed">
+          </div>
+              <div class="field-wrap">
+           <input type="text" id="job_language" name="job_language" required placeholder="Please enter if any language proficiency is needed for job as comma separated values">
+          </div>
+              <div class="field-wrap">
+             <input type="email" id = "email_signup" name = "email" placeholder="{{user_name}}" disabled>
+                  </div>
+          <div class="field-wrap">
+            <select name = "job_validity" id = "job_validity" class = "job_validity">
+              <option value = "true">This New Job Created Is Active</option>
+              <option value = "false">This New Job Created Is Inactive</option>
+            </select>
+              </div>
+               <div class="field-wrap">
+          <button type="submit" class="button button-block"/>Click to create job</button>
+          </div>
+          </form>
+        </div>
+      </div><!-- tab-content -->
+</div> <!-- /form -->
+</body>
+</html>

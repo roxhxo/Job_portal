@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{{url_for('static', filename= 'stylesheets/job_detail.css')}}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <title>JobDoor</title>
+</head>
+<body>
+  <h1>JOB DETAILS</h1>
+  <h1>{{msg}}</h1>
+<table id="job_details">
+    <thead>
+        <tr>
+            <th> Job Attribute </th>
+            <th> Attribute Value </th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+<td> Job Id </td>
+<td> {{data.job_id}}</td>
+</tr>
+<tr>
+<td> Job Title </td>
+<td> {{data.job_title}}</td>
+</tr>
+<tr>
+<td> Job Location </td>
+<td> {{data.job_location}}</td>
+</tr>
+<tr>
+<td> Job Type </td>
+<td> {{data.job_type}}</td>
+</tr>
+<tr>
+<td> Job Duration </td>
+<td> {{data.job_duration}}</td>
+</tr>
+<tr>
+<td> Job Salary Range </td>
+<td> {{data.job_salary_range}}</td>
+</tr>
+<tr>
+<td> Job Conditions </td>
+<td> {{data.job_conditions}}</td>
+</tr>
+<tr>
+<td> Job Gender </td>
+<td> {{data.job_gender}}</td>
+</tr>
+<tr>
+<td> Job Summary </td>
+<td> {{data.job_summary}}</td>
+</tr>
+<tr>
+<td> Job Responsibilities </td>
+<td> {{data.job_responsibilities}}</td>
+</tr>
+<tr>
+<td> Job Experience </td>
+<td> {{data.job_experience}}</td>
+</tr>
+<tr>
+<td> Job Soft Skills </td>
+<td> {% for my_item in data.job_soft_skills %}
+     {{my_item}},
+     {% endfor %}
+    </td>
+</tr>
+<tr>
+<td> Job Tech Skills </td>
+<td> {% for my_item in data.job_tech_skills %}
+     {{my_item}},
+     {% endfor %}</td>
+</tr>
+<tr>
+<td> Job Qualification </td>
+<td> {{data.job_qualification}}</td>
+</tr>
+<tr>
+<td> Job Certification </td>
+<td> {{data.job_certification}}</td>
+</tr>
+<tr>
+<td> Job Language </td>
+<td> {{data.job_language}}</td>
+</tr>
+<tr>
+<td> Employer Email </td>
+<td> {{data.employer_email}}</td>
+</tr>
+<tr>
+<td> Job Validity </td>
+<td> {{data.job_validity}}</td>
+</tr>
+    </tbody>
+</table>
+</body>
+</html>

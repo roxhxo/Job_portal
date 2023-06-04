@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "6444481e7709990cbb853647"
+  },
+  "candidate_college": "CMRIT, Bengaluru",
+  "candidate_degree": "Graduation, Bachelor of Engineering, Computer Science",
+  "candidate_year": "2019-2023",
+  "candidate_marks": "80",
+  "candidate_email": "lizakukreja@gmail.com"
+},{
+  "_id": {
+    "$oid": "6444482c7709990cbb853648"
+  },
+  "candidate_college": "Assam Valley School, Assam",
+  "candidate_degree": "Intermediate, Science",
+  "candidate_year": "2018-2019",
+  "candidate_marks": "92",
+  "candidate_email": "lizakukreja@gmail.com"
+},{
+  "_id": {
+    "$oid": "644448397709990cbb853649"
+  },
+  "candidate_college": "Assam Valley School, Assam",
+  "candidate_degree": "High School, Science",
+  "candidate_year": "2016-2017",
+  "candidate_marks": "94",
+  "candidate_email": "lizakukreja@gmail.com"
+},{
+  "_id": {
+    "$oid": "644448497709990cbb85364a"
+  },
+  "candidate_college": "NIT - Bhopal",
+  "candidate_degree": "Graduation, Bachelor of Engineering, Computer Science",
+  "candidate_year": "2014-2018",
+  "candidate_marks": "89",
+  "candidate_email": "vanshkukreja@gmail.com"
+},{
+  "_id": {
+    "$oid": "644448587709990cbb85364b"
+  },
+  "candidate_college": "Sacred Heart Inter College, Sitapur",
+  "candidate_degree": "Intermediate, Science",
+  "candidate_year": "2012-2013",
+  "candidate_marks": "75",
+  "candidate_email": "anshkukreja@gmail.com"
+},{
+  "_id": {
+    "$oid": "644448697709990cbb85364c"
+  },
+  "candidate_college": "Sacred Heart Inter College, Sitapur",
+  "candidate_degree": "Intermediate, Science",
+  "candidate_year": "2012-2013",
+  "candidate_marks": "75",
+  "candidate_email": "anshkukreja@gmail.com"
+},{
+  "_id": {
+    "$oid": "644d9bca18b0ebe420146aa2"
+  },
+  "candidate_college": "Moonraft",
+  "candidate_degree": "internship",
+  "candidate_year": "2023",
+  "candidate_marks": "90",
+  "candidate_email": "lizakukreja@gmail.com"
+}]

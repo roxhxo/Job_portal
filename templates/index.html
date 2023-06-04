@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/index.css')}}" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <title>JobDoor</title>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src= "{{url_for('static', filename = 'images/logo.png')}}" alt="JobDoor Logo">
+      <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+      <a href="/"><h1>JobDoor</h1></a>
+    </div>
+    <ul>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="image"><img src="{{url_for('static', filename = 'images/handshake.jpg')}}" alt="handshake"></div>
+    <div class="sections">
+      <div class="job"><h2>Looking for a job</h2>
+        <p>Find your dream with us.</p>
+        <button ><a href="/login">Login/Signup To Search Jobs</a></button></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/recruiter.css')}}" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <title>JobDoor</title>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="{{url_for('static', filename = 'images/logo.png')}}"  alt="JobDoor Logo">
+      <a href="/"><h1>JobDoor</h1></a>
+    </div>
+    <ul>
+      <li><a href="/view_recruiter">View Profile</a></li>
+      <li><a href="/edit_recruiter">Edit Profile</a></li>
+      <li><a href="/change_password">Change Password</a></li>
+      <li><a href="/job_page">Job Page</a></li>
+      <li><a href="#">{{user_name}}</a></li>
+      <li><a href="/sign_out">Sign Out</a></li>
+    </ul>
+  </nav>
+  <h1>Profile Information</h1>
+  <h1>{{msg}}</h1>
+  <div class = "profile_details">
+  <label for="company_name">Company Name</label>
+  <input type="text" id="company_name" name="company_name" required value = "{{data.company_name}}" disabled>
+  <label for="employer_name">Name</label>
+  <input type="text" id="employer_name" name="employer_name" required value = "{{data.employer_name}}" disabled>
+  <label for="employer_contact">Contact</label>
+  <input type="text" id="employer_contact" name="employer_contact" required value = "{{data.employer_contact}}" disabled>
+  <label for="employer_email">Email:</label>
+  <input type="email" id="employer_email" name="employer_email" required value = "{{data.employer_email}}" disabled>
+  <label for="employer_address">Address</label>
+  <input type="text" id="employer_address" name="employer_address" required value = "{{data.employer_address}}" disabled>
+  <label for="employer_gender">Gender</label>
+  <input type = "text" id="employer_gender" value = "{{data.employer_gender}}" required disabled>
+  <label for="employer_dob">Date of birth</label>
+  <input type="text" id="employer_dob" name="employer_dob" required value = "{{data.employer_dob}}" disabled>
+  <label for="employer_profile_pic">Profile Picture:</label>
+  <img id = "employer_profile_pic"class = "picture" src = "{{url_for('static', filename = 'profile_images/' + data.employer_picture)}}" alt = "Image Not Available">
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{{url_for('static', filename = 'stylesheets/about.css')}}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <title>JobDoor</title>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="{{url_for('static', filename = 'images/logo.png')}}" alt="JobDoor Logo">
+      <a href="/"><h1>JobDoor</h1></a>
+    </div>
+    <ul>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="about">
+        <h2>Who We Are</h2>
+        <p>We are a team of dedicated professionals who are passionate about providing the best service to our clients. Our goal is to exceed our clients' expectations by delivering high-quality work and excellent customer service.</p>
+    </section>
+
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>Our mission is to help our clients achieve their goals by providing top-notch services and solutions that are tailored to their specific needs. We strive to build long-term relationships with our clients based on trust, transparency, and mutual respect.</p>
+    </section>
+
+    <section id="values">
+        <h2>Our Values</h2>
+        <ul>
+            <li>Integrity</li>
+            <li>Excellence</li>
+            <li>Innovation</li>
+            <li>Collaboration</li>
+            <li>Accountability</li>
+        </ul>
+    </section>
+</main>
+
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/candidate.css')}}" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <title>JobDoor</title>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="{{url_for('static', filename = 'images/logo.png')}}" alt="JobDoor Logo">
+      <a href="/"><h1>JobDoor</h1></a>
+    </div>
+    <ul>
+      <li><a href="/view_candidate">View Profile</a></li>
+      <li><a href="/edit_candidate">Edit Profile</a></li>
+      <li><a href="/change_password">Change Password</a></li>
+      <li><a href="/job_resume_match">View Job Matches</a></li>
+      <li><a href="#">{{user_name}}</a></li>
+      <li><a href="/sign_out">Sign Out</a></li>
+    </ul>
+  </nav>
+  <h1>CANDIDATE DETAILS</h1>
+  <h1>{{msg}}</h1>
+<table id="candidate_details">
+    <thead>
+        <tr>
+            <th> Candidate Fields </th>
+            <th> Fields Value </th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+<td> Candidate Language </td>
+<td> {{profile_data.candidate_language}}</td>
+</tr>
+<tr>
+<td> Candidate Email </td>
+<td> {{profile_data.candidate_email}}</td>
+</tr>
+<tr>
+<td> Candidate Name </td>
+<td> {{profile_data.candidate_name}}</td>
+</tr>
+<tr>
+<td> Candidate Contact </td>
+<td> {{profile_data.candidate_contact}}</td>
+</tr>
+<tr>
+<td> Candidate Address </td>
+<td> {{profile_data.candidate_address}}</td>
+</tr>
+<tr>
+<td> Candidate Gender </td>
+<td> {{profile_data.candidate_gender}}</td>
+</tr>
+<tr>
+<td> Candidate DOB (YYYY-MM-DD) </td>
+<td> {{profile_data.candidate_dob}}</td>
+</tr>
+<tr>
+<td> Candidate Experience (in Years)</td>
+<td> {{profile_data.candidate_experience}}</td>
+</tr>
+<tr>
+<td> Candidate Picture </td>
+<td> <img class = "picture" src = "{{url_for('static', filename = 'profile_images/' + profile_data.candidate_picture)}}" alt = "Image Not Available"></td>
+</tr>
+<tr>
+<td> Candidate Skills </td>
+<td> {{skills_data}}</td>
+</tr>
+    </tbody>
+</table>
+<h1>EDUCATION DETAILS</h1>
+  <table id="education_details">
+    <thead>
+        <tr>
+            <th> College/Institution </th>
+            <th> Degree/Specialization </th>
+            <th> Passing Year </th>
+            <th> Marks (Percentage) </th>
+        </tr>
+    </thead>
+    <tbody>
+       {% for education in education_data %}
+        <tr>
+            <td>{{education[0]}}</td>
+            <td>{{education[1]}}</td>
+            <td>{{education[2]}}</td>
+            <td>{{education[3]}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<h1>WORK DETAILS</h1>
+    <table id="work_details">
+    <thead>
+        <tr>
+            <th> Work Company </th>
+            <th> Work Duration </th>
+            <th> Work Details </th>
+        </tr>
+    </thead>
+    <tbody>
+       {% for work in work_data %}
+        <tr>
+            <td>{{work[0]}}</td>
+            <td>{{work[1]}}</td>
+            <td>{{work[2]}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

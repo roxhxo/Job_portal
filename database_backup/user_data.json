@@ -1,0 +1,118 @@
+[{
+  "_id": {
+    "$oid": "6435bb507709990cbb853607"
+  },
+  "email": "lizakukreja@gmail.com",
+  "password": "vansh",
+  "hint_question": 2,
+  "hint_answer": "Sleep",
+  "user_type": 1
+},{
+  "_id": {
+    "$oid": "6435c88d9c973b79c5588c0e"
+  },
+  "email": "anshkukreja15@gmail.com",
+  "password": "vansh",
+  "hint_question": 1,
+  "hint_answer": "Thor",
+  "user_type": 2
+},{
+  "_id": {
+    "$oid": "6435d00749820eab04457ca4"
+  },
+  "email": "vanshkukreja@gmail.com",
+  "password": "vansh",
+  "hint_question": 4,
+  "hint_answer": "gin",
+  "user_type": 1
+},{
+  "_id": {
+    "$oid": "6436be7249820eab04457ca5"
+  },
+  "email": "liz@yahoo.in",
+  "password": "liz",
+  "hint_question": 1,
+  "hint_answer": "me",
+  "user_type": 1
+},{
+  "_id": {
+    "$oid": "6436eb9b6f3786e6d3485068"
+  },
+  "email": "pp@yahoo.in",
+  "password": "p1",
+  "hint_question": 2,
+  "hint_answer": "money",
+  "user_type": 1
+},{
+  "_id": {
+    "$oid": "6436f9c31f999a341585133b"
+  },
+  "email": "auv.india@gmail.com",
+  "password": "auvindia1",
+  "hint_question": 4,
+  "hint_answer": "water",
+  "user_type": 1
+},{
+  "_id": {
+    "$oid": "6436fcc513961adf916f7778"
+  },
+  "email": "lo@yahoo.in",
+  "password": "pp",
+  "hint_question": 1,
+  "hint_answer": "me",
+  "user_type": 2
+},{
+  "_id": {
+    "$oid": "6437c32f025f0820bdc858b0"
+  },
+  "email": "riddhi@yahoo.in",
+  "password": "po",
+  "hint_question": 3,
+  "hint_answer": "spain",
+  "user_type": 2
+},{
+  "_id": {
+    "$oid": "643e52a3e77092bedf9258d6"
+  },
+  "email": "purvika@yahoo.in",
+  "password": "liza",
+  "hint_question": 4,
+  "hint_answer": "orange juice",
+  "user_type": 2
+},{
+  "_id": {
+    "$oid": "64446322c989140db7c2cdae"
+  },
+  "email": "saurabh@gmail.com",
+  "password": "saurabh",
+  "hint_question": 1,
+  "hint_answer": "Silky",
+  "user_type": 1
+},{
+  "_id": {
+    "$oid": "644af1933028f5904c5a6b0a"
+  },
+  "email": "kirankukreja@gmail.com",
+  "password": "liza",
+  "hint_question": 4,
+  "hint_answer": "gin",
+  "user_type": 1
+},{
+  "_id": {
+    "$oid": "644af2623028f5904c5a6b0b"
+  },
+  "email": "wipro@gmail.com",
+  "password": "wipro",
+  "hint_question": 3,
+  "hint_answer": "Wipro",
+  "user_type": 2
+},{
+  "_id": {
+    "$oid": "644c21c5531239c2f5dab16d"
+  },
+  "email": "job@job.com",
+  "password": "job",
+  "hint_question": 1,
+  "hint_answer": "job",
+  "user_type": 1
+}]

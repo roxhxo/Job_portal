@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "64443b677709990cbb853639"
+  },
+  "candidate_language": "Hindi, English",
+  "candidate_email": "vanshkukreja@gmail.com",
+  "candidate_name": "Vansh Kukreja",
+  "candidate_contact": "+915555555555",
+  "candidate_address": "6/2 Arya Nagar, Behind Poojan Hotel Sitapur, Uttar Pradesh, 261001, India.",
+  "candidate_gender": "M",
+  "candidate_dob": "1995-09-15",
+  "candidate_picture": "vanshkukreja@gmail.png",
+  "candidate_experience": "4"
+},{
+  "_id": {
+    "$oid": "64443ba47709990cbb85363a"
+  },
+  "candidate_language": "Hindi, English",
+  "candidate_email": "anshkukreja@gmail.com",
+  "candidate_name": "Ansh Kukreja",
+  "candidate_contact": "+914444444444",
+  "candidate_address": "H No 62, 6thcross road, rajshree layout, munnekolal, banglore, 560037, India",
+  "candidate_gender": "F",
+  "candidate_dob": "1995-09-15",
+  "candidate_picture": "anshkukreja@gmail.png",
+  "candidate_experience": "3"
+},{
+  "_id": {
+    "$oid": "64443bba7709990cbb85363b"
+  },
+  "candidate_language": "Hindi, English",
+  "candidate_email": "lizakukreja@gmail.com",
+  "candidate_name": "Liza Kukreja",
+  "candidate_contact": "7355530138",
+  "candidate_address": "House No. 203, 5th a cross road, rajashree layout, munnekolal, banglore, 560037, India, World",
+  "candidate_gender": "female",
+  "candidate_dob": "2000-10-16",
+  "candidate_picture": "lizakukreja_gmail_com.png",
+  "candidate_experience": "6"
+}]

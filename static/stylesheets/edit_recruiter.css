@@ -1,0 +1,102 @@
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo img{
+    width: 50PX;
+    margin-right: 10px;
+
+}
+.logo h1{
+    font-size: 1.5rem;
+    margin: 0;
+
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin-left: 20px;
+
+}
+a{
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.recruiter-form{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 20px;
+    margin: 50px auto;
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.picture{
+width: 100px;
+height: 100px;
+ }

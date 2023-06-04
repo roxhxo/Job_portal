@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{{url_for('static',filename='stylesheets/contact.css')}}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="{{url_for('static', filename='javascript/awesome_fonts')}}"></script>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  
+  <title>JobDoor</title>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="{{url_for('static', filename = 'images/logo.png')}}" alt="JobDoor Logo">
+      <a href="/"><h1>JobDoor</h1></a>
+    </div>
+    <ul>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div>
+      <br>
+ <section id="contact-form">
+    <h2>Get in touch with us</h2>
+     <p>{{msg}}</p>
+     <br>
+    <form action="/contact_message" method="post">
+        <label for="Name">Name: </label> 
+        <input type="text" name="name" id="Name" required>
+        <label for="Email"> Email: </label>
+        <input type="Email" name="email" id="Email" required>
+        <label for="Message">Message:</label>
+        <textarea name="message" id="Message" required> </textarea>
+        <button type="submit">Send Message!</button>
+     </form>
+ </section>
+ <section id="contact-info">
+     <br>
+    <h2>Contact Information</h2>
+     <img class = "icon" src ="{{url_for('static', filename = 'images/location.svg')}}"alt = 'location'>CMRIT, College
+     <br><br>
+     <img class = "icon" src ="{{url_for('static', filename = 'images/phone.svg')}}"alt = 'phone no'>9999999999
+     <br>     <br>
+     <img class = "icon" src ="{{url_for('static', filename = 'images/envelope.svg')}}"alt = 'email'>support@jobdoor.com
+</section>
+  </div>
+</body>
+</html>

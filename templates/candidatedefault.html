@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/candidate.css')}}" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <title>JobDoor</title>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="{{url_for('static', filename = 'images/logo.png')}}" alt="JobDoor Logo">
+      <a href="/"><h1>JobDoor</h1></a>
+    </div>
+    <ul>
+      <li><a href="/view_candidate">View Profile</a></li>
+      <li><a href="/edit_candidate">Edit Profile</a></li>
+      <li><a href="/change_password">Change Password</a></li>
+      <li><a href="/job_resume_match">View Job Matches</a></li>
+      <li><a href="#">{{user_name}}</a></li>
+      <li><a href="/sign_out">Sign Out</a></li>
+    </ul>
+  </nav>
+  <h1>Profile Information</h1>
+  <h1>{{msg}}</h1>
+  <div class = "profile-form">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" value = "{{profile_data.candidate_name}}" disabled>
+  <label for="gender">Gender</label>
+  <input type="text" name="gender" id="gender" value = "{{profile_data.candidate_gender}}" disabled>
+  <label for="dob">Date of birth</label>
+  <input type="text" name="dob" id="dob" value = "{{profile_data.candidate_dob}}" disabled>
+  <label for="contact">Contact</label>
+  <input type="text" id="contact" name="contact"  value = "{{profile_data.candidate_contact}}" required disabled>
+  <label for="address">Address</label>
+  <input type="text" id="address" name="address" value = "{{profile_data.candidate_address}}" required disabled>
+  <label for="experience">Experience (In Years)</label>
+  <input type="text" id="experience" name="experience" value = "{{profile_data.candidate_experience}}" required disabled>
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" disabled value= "{{profile_data.candidate_email}}" required>
+  <label for="language">Languages</label>
+  <input type="text" name="language" id="language" value = "{{profile_data.candidate_language}}" disabled>
+    <label for="candidate_profile_pic">Profile Picture:</label>
+  <img id = "candidate_profile_pic"class = "picture" src = "{{url_for('static', filename = 'profile_images/' + profile_data.candidate_picture)}}" alt = "Image Not Available">
+
+  <label for="skills">Skills </label>
+  <input type="text" name="skills" id="skills" value = "{{skills_data}}" disabled></div>
+</div>
+  <div class = "profile-form">
+<h1>EDUCATION DETAILS</h1>
+  <table id="education_details">
+    <thead>
+        <tr>
+            <th> College/Institution </th>
+            <th> Degree/Specialization </th>
+            <th> Passing Year </th>
+            <th> Marks (Percentage) </th>
+        </tr>
+    </thead>
+    <tbody>
+       {% for education in education_data %}
+        <tr>
+            <td>{{education[0]}}</td>
+            <td>{{education[1]}}</td>
+            <td>{{education[2]}}</td>
+            <td>{{education[3]}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+  </div>
+    <div class = "profile-form">
+<h1>WORK DETAILS</h1>
+    <table id="work_details">
+    <thead>
+        <tr>
+            <th> Work Company </th>
+            <th> Work Duration </th>
+            <th> Work Details </th>
+        </tr>
+    </thead>
+    <tbody>
+       {% for work in work_data %}
+        <tr>
+            <td>{{work[0]}}</td>
+            <td>{{work[1]}}</td>
+            <td>{{work[2]}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+  </div>
+</body>
+</html>

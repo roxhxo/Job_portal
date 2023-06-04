@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{{url_for('static', filename= 'stylesheets/view_jobs.css')}}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{url_for('static', filename='javascript/jquery_1.7.1.min.js')}}"></script>
+<!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+<!--<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>-->
+    <link rel="stylesheet" href="{{url_for('static', filename= 'stylesheets/datatables.min.css')}}">
+    <script src="{{url_for('static', filename='javascript/datatables.min.js')}}"></script>
+    <script src="{{url_for('static', filename='javascript/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static', filename='javascript/sort_table.js')}}"></script>
+<!--<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>-->
+<!--<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <title>JobDoor</title>
+</head>
+<body>
+<nav>
+    <div class="logo">
+      <img src= "{{url_for('static', filename = 'images/logo.png')}}" alt="JobDoor Logo">
+      <a href="/"><h1>JobDoor</h1></a>
+    </div>
+    <ul>
+      <li><a href="/view_candidate">View Profile</a></li>
+      <li><a href="/edit_candidate">Edit Profile</a></li>
+      <li><a href="/change_password">Change Password</a></li>
+      <li><a href="/job_resume_match">View Job Matches</a></li>
+      <li><a href="#">{{user_name}}</a></li>
+      <li><a href="/sign_out">Sign Out</a></li>
+    </ul>
+  </nav>
+  <h1>JOB MATCHING DETAILS</h1>
+<table id="match_details">
+    <thead>
+        <tr>
+            <th> Job Id </th>
+            <th> Job Summary </th>
+            <th onclick="sortTable(2)"> Cosine Similarity </th>
+            <th onclick="sortTable(3)"> Word Matcher </th>
+        </tr>
+    </thead>
+    <tbody>
+   {% for result in results %}
+        <tr>
+            <td><a class = "results" href="{{ '/job_detail/%s'%result[0] }}" target="_blank">{{result[0]}}</a></td>
+            <td>{{result[1]}}</td>
+            <td>{{result[2]}}</td>
+            <td>{{result[3]}}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<!--<script>-->
+<!--function sortTable(n) {-->
+<!--  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;-->
+<!--  table = document.getElementById("match_details");-->
+<!--  switching = true;-->
+<!--  // Set the sorting direction to ascending:-->
+<!--  dir = "asc";-->
+<!--  /* Make a loop that will continue until-->
+<!--  no switching has been done: */-->
+<!--  while (switching) {-->
+<!--    // Start by saying: no switching is done:-->
+<!--    switching = false;-->
+<!--    rows = table.rows;-->
+<!--    /* Loop through all table rows (except the-->
+<!--    first, which contains table headers): */-->
+<!--    for (i = 1; i < (rows.length - 1); i++) {-->
+<!--      // Start by saying there should be no switching:-->
+<!--      shouldSwitch = false;-->
+<!--      /* Get the two elements you want to compare,-->
+<!--      one from current row and one from the next: */-->
+<!--      x = rows[i].getElementsByTagName("TD")[n];-->
+<!--      y = rows[i + 1].getElementsByTagName("TD")[n];-->
+<!--      /* Check if the two rows should switch place,-->
+<!--      based on the direction, asc or desc: */-->
+<!--      if (dir == "asc") {-->
+<!--        if (Number(x.innerHTML) > Number(y.innerHTML)) {-->
+<!--        //if so, mark as a switch and break the loop:-->
+<!--        shouldSwitch = true;-->
+<!--        break;-->
+<!--      }-->
+<!--      } else if (dir == "desc") {-->
+<!--        if (Number(x.innerHTML) < Number(y.innerHTML)) {-->
+<!--        //if so, mark as a switch and break the loop:-->
+<!--        shouldSwitch = true;-->
+<!--        break;-->
+<!--      }-->
+<!--      }-->
+<!--    }-->
+<!--    if (shouldSwitch) {-->
+<!--      /* If a switch has been marked, make the switch-->
+<!--      and mark that a switch has been done: */-->
+<!--      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);-->
+<!--      switching = true;-->
+<!--      // Each time a switch is done, increase this count by 1:-->
+<!--      switchcount ++;-->
+<!--    } else {-->
+<!--      /* If no switching has been done AND the direction is "asc",-->
+<!--      set the direction to "desc" and run the while loop again. */-->
+<!--      if (switchcount == 0 && dir == "asc") {-->
+<!--        dir = "desc";-->
+<!--        switching = true;-->
+<!--      }-->
+<!--    }-->
+<!--  }-->
+<!--}-->
+<!--</script>-->
+<!--<script>-->
+<!--$(document).ready(function(){-->
+<!--    $('#match_details').dataTable({"aaSorting": []});-->
+<!--});-->
+<!--</script>-->
+</body>
+</html>

@@ -1,0 +1,365 @@
+[{
+  "_id": {
+    "$oid": "64442e677709990cbb853628"
+  },
+  "job_id": "64442e677709990cbb853628",
+  "job_title": "Machine Learning Engineer",
+  "job_location": "Bengaluru, Karnataka, India",
+  "job_type": "Software Developer",
+  "job_duration": "2023-04-15",
+  "job_salary_range": "250000-350000",
+  "job_conditions": "Night Shift",
+  "job_gender": "female",
+  "job_summary": "Experience machine learning engineer with python scripting",
+  "job_responsibilities": "Need a person with python expertise in automation and scripting and eager to learn about machine learning algorithms and use them for preparing applications related to aritificial intelligence and image processing. Knowledge of tensor flow and keras would be beneficial  ",
+  "job_experience": "8",
+  "job_soft_skills": [
+    "english",
+    "  team leadership",
+    "  public speaking",
+    "  execution excellance"
+  ],
+  "job_tech_skills": [
+    "python",
+    "  r",
+    "  machine learning",
+    "  supervized learning",
+    "  data science",
+    "  data analysis"
+  ],
+  "job_qualification": "graduation",
+  "job_certification": "NA",
+  "job_language": "english",
+  "employer_email": "riddhi@yahoo.in",
+  "job_validity": "true"
+},{
+  "_id": {
+    "$oid": "644839e57341a003324ac3a2"
+  },
+  "job_id": "644839e57341a003324ac3a2",
+  "job_title": "Graphic Designer",
+  "job_location": "Lucknow, Uttar Pradesh, India",
+  "job_type": "Artistic Job",
+  "job_duration": "2023-04-24",
+  "job_salary_range": "300000-600000",
+  "job_gender": "male, female",
+  "job_conditions": "Candidate should have their own laptop and internet connection. Work from home will be enabled.",
+  "job_summary": "Need a good graphic designer will knowledge about adobe tools",
+  "job_experience": "3",
+  "job_responsibilities": "1. Knowledge of graphic designing.\r\n2. Knowledge of adobe tools.\r\n3. Aftereffects, photoshops, illustrator.\r\n4. Team player\r\n5. Good knowledge of art and craft with a creative view.    ",
+  "job_soft_skills": [
+    "Communication",
+    "    Excellence",
+    "    Politeness "
+  ],
+  "job_tech_skills": [
+    "Adobe Photoshop",
+    "    Adobe Ilustrator",
+    "    Drawing",
+    "    Digital Drawing",
+    "    Graphic Designing."
+  ],
+  "job_qualification": "Graduation from any artist college",
+  "job_certification": "Not required",
+  "job_validity": "true",
+  "job_language": "Hindi, English",
+  "employer_email": "riddhi@yahoo.in"
+},{
+  "_id": {
+    "$oid": "64484e1202c5666676ed884f"
+  },
+  "job_id": "64484e1202c5666676ed884f",
+  "job_title": "Machine Learning",
+  "job_location": "Raebareli, Uttar Pradesh",
+  "job_type": "Engineering",
+  "job_duration": "2023-11-12",
+  "job_salary_range": "100000-400000",
+  "job_gender": "male, female",
+  "job_conditions": "Nothing",
+  "job_summary": "Need a machine learning engineer",
+  "job_experience": "5",
+  "job_responsibilities": "1. Python language is must.\r\n2. Machine learning is must.\r\n3. Image processing, neural network, data analysis, data scientist.\r\n4. English language.\r\n5. Python automation and testing.         ",
+  "job_soft_skills": [
+    "Kind",
+    " Calm",
+    " Honest"
+  ],
+  "job_tech_skills": [
+    "Python",
+    " R",
+    " Machine Learning",
+    " Data Scientist",
+    " Data Analytics",
+    " Testing",
+    " Data Engineer"
+  ],
+  "job_qualification": "Graduation",
+  "job_certification": "NA",
+  "job_validity": "true",
+  "job_language": "English",
+  "employer_email": "riddhi@yahoo.in"
+},{
+  "_id": {
+    "$oid": "644af3c13028f5904c5a6b0c"
+  },
+  "job_id": "644af3c13028f5904c5a6b0c",
+  "job_title": "graphic designer",
+  "job_location": "Bangalore",
+  "job_type": "artistic",
+  "job_duration": "2023-04-13",
+  "job_salary_range": "400000-600000",
+  "job_gender": "male, female",
+  "job_conditions": "NA",
+  "job_summary": "Need to know adobe and canna",
+  "job_experience": "2",
+  "job_responsibilities": " Enter the job responsibilities in detail. \r\n1. Need to deal with clients.\r\n2.Should have good communication skills. ",
+  "job_soft_skills": [
+    "adobe",
+    " canva"
+  ],
+  "job_tech_skills": [
+    "adobe",
+    "  canva"
+  ],
+  "job_qualification": "high school",
+  "job_certification": "NA",
+  "job_validity": "true",
+  "job_language": "English",
+  "employer_email": "wipro@gmail.com"
+},{
+  "_id": {
+    "$oid": "644bf9aa25b911786a1f927b"
+  },
+  "job_title": "Content Writing For Children Mental Development",
+  "job_location": "Lucknow",
+  "job_type": "Work From Home",
+  "job_duration": "2023-04-03",
+  "job_salary_range": "100000-300000",
+  "job_gender": "male, female",
+  "job_conditions": "Laptop",
+  "job_summary": "Content Writing Needed For Children Mental Development",
+  "job_experience": "3",
+  "job_responsibilities": "1. Research on children behaviour.\r\n2. Content writing and reading habit.\r\n3. Book explanation and word and powerpoint.\r\n4. Drawing knowledge is appreciated.   ",
+  "job_soft_skills": [
+    "Writing",
+    "    Communication",
+    "    Exploration",
+    "    Calmness"
+  ],
+  "job_tech_skills": [
+    "Content Writing",
+    "    Work",
+    "    Internet Scraping",
+    "    Google Search"
+  ],
+  "job_qualification": "High School, Intermediate",
+  "job_certification": "Coursera Certification Needed",
+  "job_validity": "true",
+  "job_language": "Hindi, English, Spanish",
+  "employer_email": "riddhi@yahoo.in",
+  "job_id": "644bf9aa25b911786a1f927b"
+},{
+  "_id": {
+    "$oid": "644bfcd844a377ad67538691"
+  },
+  "job_title": "Driver",
+  "job_location": "Raebareli",
+  "job_type": "Driving Honda City",
+  "job_duration": "2023-05-01",
+  "job_salary_range": "10000-15000",
+  "job_gender": "male",
+  "job_conditions": "No drinking or bad behaviour",
+  "job_summary": "DAILY USAGE PERSONAL DRIVER",
+  "job_experience": "2",
+  "job_responsibilities": "1. Driving to school daily.\r\n2. Driving for shopping needs.\r\n3. Driving for parties.\r\n4. Driving for outstations.",
+  "job_soft_skills": [
+    "Kind",
+    " Safe",
+    " Honest"
+  ],
+  "job_tech_skills": [
+    "Driving",
+    " Good eye sight"
+  ],
+  "job_qualification": "High School",
+  "job_certification": "Driving License",
+  "job_validity": "true",
+  "job_language": "Hindi",
+  "employer_email": "riddhi@yahoo.in",
+  "job_id": "644bfcd844a377ad67538691"
+},{
+  "_id": {
+    "$oid": "644d9dbd9097da073eb9647f"
+  },
+  "job_title": "Data Analyst",
+  "job_location": "Lucknow",
+  "job_type": "Data Analysis",
+  "job_duration": "2023-04-04",
+  "job_salary_range": "1000000-1200000",
+  "job_gender": "male, female, transgender",
+  "job_conditions": "English speaking",
+  "job_summary": "Should have knowledge about data science.",
+  "job_experience": "3",
+  "job_responsibilities": "\r\n1. data science\r\n2. data analysis\r\n3. data moderation",
+  "job_soft_skills": [
+    "Writing",
+    " Communication",
+    " Exploration",
+    " Calmness"
+  ],
+  "job_tech_skills": [
+    "data analysis"
+  ],
+  "job_qualification": "Graduation",
+  "job_certification": "data science",
+  "job_validity": "true",
+  "job_language": "Hindi, English",
+  "employer_email": "wipro@gmail.com",
+  "job_id": "644d9dbd9097da073eb9647f"
+},{
+  "_id": {
+    "$oid": "644d9e2f9097da073eb96480"
+  },
+  "job_title": "Mech engg",
+  "job_location": "gujarat",
+  "job_type": "mechanics",
+  "job_duration": "2023-04-01",
+  "job_salary_range": "200000-50000",
+  "job_gender": "male, female, transgender",
+  "job_conditions": "NA",
+  "job_summary": "Basic engg mechanics",
+  "job_experience": "5",
+  "job_responsibilities": "1. good at mechanics",
+  "job_soft_skills": [
+    "automobiles"
+  ],
+  "job_tech_skills": [
+    "autocad "
+  ],
+  "job_qualification": "graduate",
+  "job_certification": "autocad",
+  "job_validity": "true",
+  "job_language": "Hindi, English",
+  "employer_email": "wipro@gmail.com",
+  "job_id": "644d9e2f9097da073eb96480"
+},{
+  "_id": {
+    "$oid": "644d9ec59097da073eb96481"
+  },
+  "job_title": "chemical engg",
+  "job_location": "kochi",
+  "job_type": "lab assistant",
+  "job_duration": "2023-04-20",
+  "job_salary_range": "400000-800000",
+  "job_gender": "male, female, transgender",
+  "job_conditions": "need to travel ",
+  "job_summary": "need a lab assistant for day to day activites",
+  "job_experience": "1",
+  "job_responsibilities": "1. should know how to handle lab materials.\r\n2. should have good knowledge about various chemicals.",
+  "job_soft_skills": [
+    "Kind",
+    " Calm",
+    " Honest"
+  ],
+  "job_tech_skills": [
+    "organic and physical chemistry "
+  ],
+  "job_qualification": "Graduation",
+  "job_certification": "NA",
+  "job_validity": "true",
+  "job_language": "Hindi, English, Spanish",
+  "employer_email": "wipro@gmail.com",
+  "job_id": "644d9ec59097da073eb96481"
+},{
+  "_id": {
+    "$oid": "644d9fb69097da073eb96482"
+  },
+  "job_title": "IT engineer",
+  "job_location": "srinagar",
+  "job_type": "Engineering",
+  "job_duration": "2023-04-04",
+  "job_salary_range": "1700000-2000000",
+  "job_gender": "male, female",
+  "job_conditions": "Need to be flexible about travel",
+  "job_summary": "Need to have good IT skills.",
+  "job_experience": "4",
+  "job_responsibilities": "1. Good IT skills.\r\n2. Good programming skills. ",
+  "job_soft_skills": [
+    "Kind",
+    " Calm",
+    " Honest"
+  ],
+  "job_tech_skills": [
+    "Python",
+    " R",
+    " Machine Learning",
+    " Data Scientist",
+    " Data Analytics",
+    " Testing",
+    " Data Engineer"
+  ],
+  "job_qualification": "Graduation",
+  "job_certification": "Not Needed",
+  "job_validity": "true",
+  "job_language": "Hindi, English",
+  "employer_email": "wipro@gmail.com",
+  "job_id": "644d9fb69097da073eb96482"
+},{
+  "_id": {
+    "$oid": "644da0139097da073eb96483"
+  },
+  "job_title": "Human resource",
+  "job_location": "chennai",
+  "job_type": "HR",
+  "job_duration": "2023-04-21",
+  "job_salary_range": "600000-900000",
+  "job_gender": "male, female, transgender",
+  "job_conditions": "need to be a people's person",
+  "job_summary": "good communication skills",
+  "job_experience": "2",
+  "job_responsibilities": " 1. need to take job interviews\r\n2. need to shortlist candidates for interviews. ",
+  "job_soft_skills": [
+    "Kind",
+    " Calm",
+    " Honest"
+  ],
+  "job_tech_skills": [
+    "NA"
+  ],
+  "job_qualification": "Graduation",
+  "job_certification": "NA",
+  "job_validity": "true",
+  "job_language": "Hindi, English",
+  "employer_email": "wipro@gmail.com",
+  "job_id": "644da0139097da073eb96483"
+},{
+  "_id": {
+    "$oid": "644da0869097da073eb96484"
+  },
+  "job_title": "Accountant",
+  "job_location": "rajasthan",
+  "job_type": "accounts",
+  "job_duration": "2023-04-03",
+  "job_salary_range": "500000-900000",
+  "job_gender": "na",
+  "job_conditions": "na",
+  "job_summary": "need to manage company accouts with various clients",
+  "job_experience": "3",
+  "job_responsibilities": "1. need to be good at maths.\r\n2. need to do quick calculations.",
+  "job_soft_skills": [
+    "smart",
+    "deligent",
+    "honest"
+  ],
+  "job_tech_skills": [
+    "mathematics",
+    " commerce",
+    " accounts"
+  ],
+  "job_qualification": "Graduation",
+  "job_certification": "NA",
+  "job_validity": "true",
+  "job_language": "Hindi, English",
+  "employer_email": "wipro@gmail.com",
+  "job_id": "644da0869097da073eb96484"
+}]

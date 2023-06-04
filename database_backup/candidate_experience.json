@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "6444459a7709990cbb853642"
+  },
+  "work_company": "Wipro",
+  "work_duration": "2018-2022",
+  "work_details": "Worked on networking projects, machine learning, time series, testing, python, git, jenkins, automation tester",
+  "candidate_email": "lizakukreja@gmail.com",
+  "work_college": "Wipro"
+},{
+  "_id": {
+    "$oid": "644445b97709990cbb853643"
+  },
+  "work_company": "Amazon",
+  "work_duration": "2018-Present",
+  "work_details": "Worked on frontend development, react applications, debugging and testing of code. Backend development in python and database handling as well.",
+  "candidate_email": "anshkukreja@gmail.com"
+},{
+  "_id": {
+    "$oid": "644445d17709990cbb853644"
+  },
+  "work_company": "Auvindia",
+  "work_duration": "2018-2020",
+  "work_details": "Worked on creating environmental solution based on data analysis and created graphs and provided website and solution for testing climate.",
+  "candidate_email": "vanshkukreja@gmail.com"
+},{
+  "_id": {
+    "$oid": "644445ea7709990cbb853645"
+  },
+  "work_company": "TCS",
+  "work_duration": "2020-2023",
+  "work_details": "worked on developing mongodb database and also projecting it in graphical format using python frameworks and also did testing",
+  "candidate_email": "vanshkukreja@gmail.com"
+}]
